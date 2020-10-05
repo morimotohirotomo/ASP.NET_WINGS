@@ -108,6 +108,7 @@
     <Content Include="About.aspx" />
     <Content Include="Chapter03-02.aspx" />
     <Content Include="Chapter03-03.aspx" />
+    <Content Include="Chapter03-05.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -185,6 +186,13 @@
     </Compile>
     <Compile Include="Chapter03-03.aspx.designer.cs">
       <DependentUpon>Chapter03-03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter03-05.aspx.cs">
+      <DependentUpon>Chapter03-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chapter03-05.aspx.designer.cs">
+      <DependentUpon>Chapter03-05.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>

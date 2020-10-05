@@ -69,7 +69,6 @@ C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\b
 C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\bin\ja\System.Web.Optimization.resources.dll
 C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\bin\ja\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
 C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\obj\Debug\WebApplication1.dll
