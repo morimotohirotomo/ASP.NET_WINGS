@@ -106,6 +106,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Chapter03-02.aspx" />
+    <Content Include="Chapter03-03.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -170,6 +172,20 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Chapter03-02.aspx.cs">
+      <DependentUpon>Chapter03-02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chapter03-02.aspx.designer.cs">
+      <DependentUpon>Chapter03-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter03-03.aspx.cs">
+      <DependentUpon>Chapter03-03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chapter03-03.aspx.designer.cs">
+      <DependentUpon>Chapter03-03.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
