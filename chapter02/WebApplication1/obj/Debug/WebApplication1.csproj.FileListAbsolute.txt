@@ -73,3 +73,4 @@ C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\o
 C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
 C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\minam\Desktop\C#_prac\ASP.NET_WINGS\chapter\chapter02\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache

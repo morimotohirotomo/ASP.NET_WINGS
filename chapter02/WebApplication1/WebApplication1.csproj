@@ -106,9 +106,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\DatabaseSample.mdf" />
+    <Content Include="App_Data\DatabaseSample_log.ldf">
+      <DependentUpon>DatabaseSample.mdf</DependentUpon>
+    </Content>
+    <Content Include="Basic\GridViewSample.aspx" />
     <Content Include="Chapter03-02.aspx" />
     <Content Include="Chapter03-03.aspx" />
     <Content Include="Chapter03-05.aspx" />
+    <Content Include="Chapter03-06.ascx" />
+    <Content Include="Chapter12-02.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -173,6 +180,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Basic\GridViewSample.aspx.cs">
+      <DependentUpon>GridViewSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basic\GridViewSample.aspx.designer.cs">
+      <DependentUpon>GridViewSample.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Chapter03-02.aspx.cs">
       <DependentUpon>Chapter03-02.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -193,6 +207,20 @@
     </Compile>
     <Compile Include="Chapter03-05.aspx.designer.cs">
       <DependentUpon>Chapter03-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter03-06.ascx.cs">
+      <DependentUpon>Chapter03-06.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chapter03-06.ascx.designer.cs">
+      <DependentUpon>Chapter03-06.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter12-02.aspx.cs">
+      <DependentUpon>Chapter12-02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chapter12-02.aspx.designer.cs">
+      <DependentUpon>Chapter12-02.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -241,9 +269,7 @@
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
