@@ -13,5 +13,25 @@ namespace WebApplication1.Basic
         {
 
         }
+
+        protected void GridView1_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            var employeeId = GridView1.SelectedValue;
+            Response.Redirect(string.Format(
+                "~/Basic/FormViewSample.aspx?EmployeeId={0}", employeeId));
+        }
+        protected void GridView1_RowCommand1(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Custom")
+            {
+                int rowNumber = int.Parse(e.CommandArgument.ToString());
+                GridView1.Rows[rowNumber].Cells[2].BackColor = System.Drawing.Color.Red;
+            }
+        }
+
+        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
     }
 }
