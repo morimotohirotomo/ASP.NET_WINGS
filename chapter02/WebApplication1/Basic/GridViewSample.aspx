@@ -95,6 +95,86 @@
                     <asp:Parameter Name="EmployeeId" Type="Int32" />
                 </UpdateParameters>
             </asp:SqlDataSource>
+
+            <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource2" DataKeyNames="EmployeeId" OnSelectedIndexChanged="ListView1_SelectedIndexChanged" GroupItemCount="3">
+
+                <EmptyDataTemplate>
+                    <span>データは返されませんでした。</span>
+                </EmptyDataTemplate>
+
+                <ItemTemplate>
+                    <td>
+                    <span style="">社員ID:
+                    <asp:Label ID="EmployeeIdLabel" runat="server" Text='<%# Eval("EmployeeId") %>' />
+                    <br />
+                    名前:
+                    <asp:Label ID="NameLabel" runat="server" Text='<%# Eval("Name") %>' />
+                    <br />
+                    課:
+                    <asp:Label ID="DepartmentIdLabel" runat="server" Text='<%# Eval("DepartmentId") %>' />
+                    <br />
+                    誕生日:
+                    <asp:Label ID="BirthdayLabel" runat="server" Text='<%# Eval("Birthday") %>' />
+                    <br />
+                    当期売上高:
+                    <asp:Label ID="SaleLabel" runat="server" Text='<%# Eval("Sale") %>' />
+                    <br />
+                    電話番号:
+                    <asp:Label ID="TelNoLabel" runat="server" Text='<%# Eval("TelNo") %>' />
+                    <br />
+                    性別:
+                    <asp:Label ID="SexLabel" runat="server" Text='<%# (bool)Eval("Sex")?"男性":"女性" %>'></asp:Label>
+                    </span>
+                    </td>
+                </ItemTemplate>
+                <GroupSeparatorTemplate>
+                    <tr><td colspan="3">グループ区切り</td></tr>
+                </GroupSeparatorTemplate>
+                <GroupTemplate>
+                    <tr>
+                        <span runat="server" id="itemPlaceholder" />
+                    </tr>
+                </GroupTemplate>
+                <EmptyDataTemplate>
+                    <td>表示するレコードなし</td>
+                </EmptyDataTemplate>
+                <LayoutTemplate>
+                    <table border="1">
+                        <span runat="server" id="groupPlaceholder"></span>
+                    </table>
+                    <div>
+                        <asp:DataPager ID="DataPager1" runat="server">
+                            <Fields>
+                                <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                                <asp:NumericPagerField />
+                                <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                            </Fields>
+                        </asp:DataPager>
+                    </div>
+                </LayoutTemplate>
+            </asp:ListView>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM Employees WHERE (EmployeeId = @EmployeeId)" InsertCommand="INSERT INTO Employees(Name, DepartmentId, Birthday, Sale, TelNo, Sex) VALUES (@Name, @DepartmentId, @Birthday, @Sale, @TelNo, @Sex)" SelectCommand="SELECT Employees.*, Departments.Name AS DepartmentName FROM Departments INNER JOIN Employees ON Departments.DepartmentId = Employees.DepartmentId" UpdateCommand="UPDATE Employees SET Name = @Name, DepartmentId = @DepartmentId, Birthday = @Birthday, Sale = @Sale, TelNo = @TelNo, Sex = @Sex WHERE (EmployeeId = @EmployeeId)">
+                <DeleteParameters>
+                    <asp:Parameter Name="EmployeeId" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="Name" />
+                    <asp:Parameter Name="DepartmentId" />
+                    <asp:Parameter Name="Birthday" />
+                    <asp:Parameter Name="Sale" />
+                    <asp:Parameter Name="TelNo" />
+                    <asp:Parameter Name="Sex" />
+                </InsertParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="Name" />
+                    <asp:Parameter Name="DepartmentId" />
+                    <asp:Parameter Name="Birthday" />
+                    <asp:Parameter Name="Sale" />
+                    <asp:Parameter Name="TelNo" />
+                    <asp:Parameter Name="Sex" />
+                    <asp:Parameter Name="EmployeeId" />
+                </UpdateParameters>
+            </asp:SqlDataSource>
         </div>
     </form>
 </body>
