@@ -136,9 +136,11 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="ListViewCommandSample.aspx" />
+    <Content Include="NestedContentPageSample.aspx" />
     <Content Include="OutputCache.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Sample.Master" />
+    <Content Include="NestedMasterPageSample.master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -256,6 +258,20 @@
     </Compile>
     <Compile Include="ListViewCommandSample.aspx.designer.cs">
       <DependentUpon>ListViewCommandSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NestedContentPageSample.aspx.cs">
+      <DependentUpon>NestedContentPageSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedContentPageSample.aspx.designer.cs">
+      <DependentUpon>NestedContentPageSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NestedMasterPageSample.master.cs">
+      <DependentUpon>NestedMasterPageSample.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedMasterPageSample.master.designer.cs">
+      <DependentUpon>NestedMasterPageSample.master</DependentUpon>
     </Compile>
     <Compile Include="OutputCache.aspx.cs">
       <DependentUpon>OutputCache.aspx</DependentUpon>

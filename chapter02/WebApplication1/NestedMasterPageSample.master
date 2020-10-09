@@ -1,0 +1,17 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Sample.Master" AutoEventWireup="true" CodeBehind="NestedMasterPageSample.master.cs" Inherits="WebApplication1.NestedMasterPageSample" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div style="float:left">
+        <h3>入れ子にされたマスターページ</h3>
+        <a href="~/Company/Company.aspx">会社情報</a>
+        <br />
+        <a href="~/Company/History.aspx">会社沿革</a>
+        <br />
+        <a href="~/Company/Access.aspx">アクセスマップ</a>
+        <br />
+    </div>
+    <div style="float:right">
+        <asp:ContentPlaceHolder ID="NestedContent" runat="server"></asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
