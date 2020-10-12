@@ -13,6 +13,7 @@ namespace WebApplication2.Models
     // User クラスにさらにプロパティを追加すると、ユーザーの User データを追加できます。詳細については、https://go.microsoft.com/fwlink/?LinkID=317594 を参照してください。
     public class ApplicationUser : IdentityUser
     {
+        public string Address { get; set; }
         public ClaimsIdentity GenerateUserIdentity(ApplicationUserManager manager)
         {
             // authenticationType は、CookieAuthenticationOptions.AuthenticationType に定義されている種類と一致する必要があります
@@ -38,6 +39,10 @@ namespace WebApplication2.Models
         {
             return new ApplicationDbContext();
         }
+    }
+    public class ApplicationRole: IdentityRole
+    {
+
     }
 }
 

@@ -37,6 +37,13 @@
             </div>
         </div>
         <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="Address" CssClass="col-md-2 control-label">住所</asp:Label>
+            <div class="col-md-10">
+                <asp:TextBox runat="server" ID="Address" CssClass="form-control"></asp:TextBox>
+                <asp:RequiredFieldValidator runat="server" CssClass="text-danger" ControlToValidate="Address" ErrorMessage="住所フィールドは必須です。"></asp:RequiredFieldValidator>
+            </div>
+        </div>
+        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="登録" CssClass="btn btn-default" />
             </div>
